@@ -1,0 +1,96 @@
+{
+  "drinksList": [
+    {
+      "name": "Red Wine",
+      "img": "redwine.svg"
+    },
+    {
+      "name": "Beer",
+      "img": "beer.svg"
+    },
+    {
+      "name": "Spirit",
+      "img": "spirit.svg"
+    },
+    {
+      "name": "White Wine",
+      "img": "whitewine.svg"
+    },
+    {
+      "name": "Mock-tail",
+      "img": "mocktail.svg"
+    },
+    {
+      "name": "Cocktail",
+      "img": "cocktail.svg"
+    },
+    {
+      "name": "Coffee",
+      "img": "coffee.svg"
+    },
+    {
+      "name": "Tea",
+      "img": "tea.svg"
+    },
+    {
+      "name": "Sweet",
+      "img": "sweet.svg"
+    },
+    {
+      "name": "Smoothie",
+      "img": "smoothie.svg"
+    },
+    {
+      "name": "Fresh Juice",
+      "img": "freshjuice.svg"
+    },
+    {
+      "name": "Vitamin Juice",
+      "img": "vitaminjuice.svg"
+    },
+    {
+      "name": "Fizzy",
+      "img": "fizzy.svg"
+    },
+    {
+      "name": "Water",
+      "img": "water.svg"
+    },
+    {
+      "name": "Milk",
+      "img": "milk.svg"
+    },
+    {
+      "name": "Soy",
+      "img": "soy.svg"
+    },
+    {
+      "name": "Coconut",
+      "img": "coconut.svg"
+    },
+    {
+      "name": "Electrolyte",
+      "img": "electrolyte.svg"
+    },
+    {
+      "name": "Energy",
+      "img": "energy.svg"
+    },
+    {
+      "name": "Milkshake",
+      "img": "milkshake.svg"
+    },
+    {
+      "name": "Vegetable",
+      "img": "vegetable.svg"
+    },
+    {
+      "name": "Health-shake",
+      "img": "healthshake.svg"
+    },
+    {
+      "name": "Pro-biotic",
+      "img": "probiotic.svg"
+    }
+  ]
+}
