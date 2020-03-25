@@ -245,9 +245,9 @@ class Home extends StatelessWidget {
 //     super.initState();
 //     _dimension = 153.0;
 //     for (String assetName in assetNames) {
-//       _painters.add(
-//         SvgPicture.asset(assetName),
-//       );
+// _painters.add(
+//   SvgPicture.asset(assetName),
+// );
 //     }
 //     // Build a list of titles
 //     for (String assetTitle in assetTitles) {
@@ -259,9 +259,9 @@ class Home extends StatelessWidget {
 
 //   @override
 //   Widget build(BuildContext context) {
-//     if (_dimension > MediaQuery.of(context).size.width - 10.0) {
-//       _dimension = MediaQuery.of(context).size.width - 10.0;
-//     }
+// if (_dimension > MediaQuery.of(context).size.width - 10.0) {
+//   _dimension = MediaQuery.of(context).size.width - 10.0;
+// }
 //     return Scaffold(
 //       backgroundColor: PrimaryColor,
 //       appBar: AppBar(
@@ -269,23 +269,16 @@ class Home extends StatelessWidget {
 //         backgroundColor: SecondaryColor,
 //       ),
 //       body: Column(children: <Widget>[
-//         // Slider(
-//         //     min: 5.0,
-//         //     max: MediaQuery.of(context).size.width - 10.0,
-//         //     value: _dimension,
-//         //     onChanged: (double val) {
-//         //       setState(() => _dimension = val);
-//         //     }),
-//         Expanded(
-//           child: GridView.extent(
-//             // shrinkWrap: true,
-//             maxCrossAxisExtent: _dimension,
-//             // padding: const EdgeInsets.all(4.0),
-//             // mainAxisSpacing: 4.0,
-//             // crossAxisSpacing: 4.0,
-//             children: _titles.toList(),
-//           ),
-//         ),
+// Expanded(
+//   child: GridView.extent(
+//     // shrinkWrap: true,
+//     maxCrossAxisExtent: _dimension,
+//     // padding: const EdgeInsets.all(4.0),
+//     // mainAxisSpacing: 4.0,
+//     // crossAxisSpacing: 4.0,
+//     children: _titles.toList(),
+//   ),
+// ),
 //         Expanded(
 //           child: GridView.extent(
 //             shrinkWrap: true,

@@ -48,9 +48,29 @@ flutter:
     - assets/menu_toilet.svg
     - assets/menu_drink.svg
     - assets/fruit_salad.svg
-    - assets/drinks/water.svg
-    - assets/drinks/tea.svg
-    - assets/drinks/coffee.svg
+    - assets/redwine.svg
+    - assets/beer.svg
+    - assets/spirit.svg
+    - assets/whitewine.svg
+    - assets/mocktail.svg
+    - assets/cocktail.svg
+    - assets/coffee.svg
+    - assets/tea.svg
+    - assets/sweet.svg
+    - assets/smoothie.svg
+    - assets/freshjuice.svg
+    - assets/vitaminjuice.svg
+    - assets/cola.svg
+    - assets/water.svg
+    - assets/milk.svg
+    - assets/soy.svg
+    - assets/coconut.svg
+    - assets/electrolyte.svg
+    - assets/energy.svg
+    - assets/milkshake.svg
+    - assets/vegetablejuice.svg
+    - assets/healthshake.svg
+    - assets/pro-biotic.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
