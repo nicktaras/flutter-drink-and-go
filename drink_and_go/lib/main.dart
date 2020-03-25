@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'icons.dart';
+import 'drink.dart';
 
 // Main App Page setup
 // home: first page of application.
 void main() {
-  runApp(MaterialApp(
-    title: 'Drink and Go',
-    color: Colors.black,
-    home: Home(),
-  ));
+  runApp(MaterialApp(title: 'Drink and Go', color: Colors.black, home: Test()));
 }
 
 final Widget fruitSalad = SvgPicture.asset(
@@ -195,20 +192,126 @@ class Home extends StatelessWidget {
   }
 }
 
+// https://fluttercentral.com/Articles/Post/31/GridView_Example
+
+// class MyHomePage extends StatefulWidget {
+//   const MyHomePage({Key key, this.title}) : super(key: key);
+//   final String title;
+
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
+
+// https://fluttercentral.com/Articles/Post/31/GridView_Example
+
+// class Choice {
+//   const Choice({this.title, this.image});
+//   final String title;
+//   final String image;
+// }
+
+// const List<Choice> choices = const <Choice>[
+//   const Choice(title: 'water', image: 'assets/drinks/water.svg'),
+//   const Choice(title: 'tea', image: 'assets/drinks/tea.svg'),
+//   const Choice(title: 'coffee', image: 'assets/drinks/coffee.svg'),
+// ];
+
+// const List<String> assetNames = <String>[
+//   'assets/drinks/water.svg',
+//   'assets/drinks/tea.svg',
+//   'assets/drinks/coffee.svg',
+// ];
+// const List<String> assetTitles = <String>[
+//   'water',
+//   'tea',
+//   'coffee',
+// ];
+
+// class DrinkItem implements ListItem {
+//   final String image;
+//   final String title;
+//   DrinkItem(image, title);
+//   Widget buildTitle(BuildContext context) => Text(image);
+//   Widget buildSubtitle(BuildContext context) => Text(title);
+// }
+
+// class _MyHomePageState extends State<MyHomePage> {
+//   final List<Widget> _painters = <Widget>[];
+//   final List<Widget> _titles = <Widget>[];
+//   double _dimension;
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     _dimension = 153.0;
+//     for (String assetName in assetNames) {
+//       _painters.add(
+//         SvgPicture.asset(assetName),
+//       );
+//     }
+//     // Build a list of titles
+//     for (String assetTitle in assetTitles) {
+//       _titles.add(
+//         Text(assetTitle),
+//       );
+//     }
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     if (_dimension > MediaQuery.of(context).size.width - 10.0) {
+//       _dimension = MediaQuery.of(context).size.width - 10.0;
+//     }
+//     return Scaffold(
+//       backgroundColor: PrimaryColor,
+//       appBar: AppBar(
+//         title: Text('Please Select a Drink'),
+//         backgroundColor: SecondaryColor,
+//       ),
+//       body: Column(children: <Widget>[
+//         // Slider(
+//         //     min: 5.0,
+//         //     max: MediaQuery.of(context).size.width - 10.0,
+//         //     value: _dimension,
+//         //     onChanged: (double val) {
+//         //       setState(() => _dimension = val);
+//         //     }),
+//         Expanded(
+//           child: GridView.extent(
+//             // shrinkWrap: true,
+//             maxCrossAxisExtent: _dimension,
+//             // padding: const EdgeInsets.all(4.0),
+//             // mainAxisSpacing: 4.0,
+//             // crossAxisSpacing: 4.0,
+//             children: _titles.toList(),
+//           ),
+//         ),
+//         Expanded(
+//           child: GridView.extent(
+//             shrinkWrap: true,
+//             maxCrossAxisExtent: _dimension,
+//             padding: const EdgeInsets.all(4.0),
+//             // mainAxisSpacing: 4.0,
+//             // crossAxisSpacing: 4.0,
+//             children: _painters.toList(),
+//           ),
+//         ),
+//       ]),
+//     );
+//   }
+// }
+
 class Drink extends StatelessWidget {
   @override
+  final List<Widget> _painters = <Widget>[];
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: PrimaryColor,
-      appBar: AppBar(
-        title: Text("Please Select a Drink"),
-        backgroundColor: SecondaryColor,
-      ),
-      body: Center(
-          child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[])),
-    );
+        backgroundColor: PrimaryColor,
+        appBar: AppBar(
+          title: Text("Please Select a Drink"),
+          backgroundColor: SecondaryColor,
+        ),
+        body: Center(child: Text('hello')));
   }
 }
 

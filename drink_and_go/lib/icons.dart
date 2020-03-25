@@ -28,9 +28,3 @@ final Widget menuAbout = SvgPicture.asset(
   placeholderBuilder: (context) => CircularProgressIndicator(),
   height: 70,
 );
-
-const List<String> assetNames = <String>[
-  'assets/drinks/water.svg',
-  'assets/drinks/tea.svg',
-  'assets/drinks/coffee.svg'
-];

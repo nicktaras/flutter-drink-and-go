@@ -48,8 +48,9 @@ flutter:
     - assets/menu_toilet.svg
     - assets/menu_drink.svg
     - assets/fruit_salad.svg
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
+    - assets/drinks/water.svg
+    - assets/drinks/tea.svg
+    - assets/drinks/coffee.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
