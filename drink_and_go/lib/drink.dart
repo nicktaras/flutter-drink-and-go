@@ -1,3 +1,4 @@
+import 'package:drink_and_go/drinkNumber.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -86,45 +87,50 @@ class ChoiceCard extends StatelessWidget {
           side: BorderSide(color: PrimaryColor, width: 0),
           borderRadius: BorderRadius.circular(0),
         ),
-        child: Center(
-          child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                // new Container(color: Colors.red, child: new Center(child: new Text("data"))),
-                Transform.translate(
-                  offset: Offset(0, 10.0),
-                  child: Container(
-                    width: 120,
-                    height: 95,
-                    child: SvgPicture.asset(choice.icon),
-                  ),
-                ),
-                Transform.translate(
-                  offset: Offset(0, 7),
-                  child: Container(
-                      width: 120,
-                      height: 35,
-                      color: PrimaryColor,
-                      child: TextField(
-                          textAlignVertical: TextAlignVertical.center,
-                          textAlign: TextAlign.center,
-                          decoration: new InputDecoration(
-                            border: OutlineInputBorder(
-                              // borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(
-                                width: 0,
-                                style: BorderStyle.none,
-                              ),
-                            ),
-                            filled: true,
-                            contentPadding: const EdgeInsets.all(7.0),
-                            hintStyle: new TextStyle(color: Colors.white),
-                            hintText: choice.title,
-                            fillColor: TertiaryColor,
-                          ))),
-                ),
-              ]),
-        ));
+        child: new InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => DrinkNumber()),
+              );
+            },
+            child: Container(
+                child: Center(
+              child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    // new Container(color: Colors.red, child: new Center(child: new Text("data"))),
+                    Transform.translate(
+                      offset: Offset(0, 10.0),
+                      child: Container(
+                        width: 120,
+                        height: 95,
+                        child: SvgPicture.asset(choice.icon),
+                      ),
+                    ),
+                    Transform.translate(
+                        offset: Offset(0, 7),
+                        child: Container(
+                            width: 120,
+                            height: 35,
+                            color: PrimaryColor,
+                            child: new Container(
+                                decoration: new BoxDecoration(
+                                    color: TertiaryColor,
+                                    borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(10.0),
+                                      topRight: const Radius.circular(10.0),
+                                      bottomLeft: const Radius.circular(10.0),
+                                      bottomRight: const Radius.circular(10.0),
+                                    )),
+                                child: new Center(
+                                  child: new Text(choice.title,
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                      )),
+                                )))),
+                  ]),
+            ))));
   }
 }
