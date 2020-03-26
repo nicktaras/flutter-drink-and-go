@@ -1,30 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+const PrimaryTextColor = const Color.fromARGB(255, 255, 255, 255);
+const PrimaryColor = const Color.fromARGB(255, 54, 176, 170);
+const SecondaryColor = const Color.fromARGB(255, 33, 120, 115);
+const TertiaryColor = const Color.fromARGB(255, 78, 189, 184);
+
 // https://fluttercentral.com/Articles/Post/31/GridView_Example
 double _dimension;
 
-class Test extends StatelessWidget {
+class Drink extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final title = "Grid List";
+    final title = "Please Select a Drink";
     return MaterialApp(
         title: title,
         home: Scaffold(
+            backgroundColor: PrimaryColor,
             appBar: AppBar(
               title: Text(title),
+              backgroundColor: SecondaryColor,
             ),
             body: GridView.count(
-                childAspectRatio: 1.0,
+                childAspectRatio: 0.9,
                 padding: const EdgeInsets.all(1.0),
                 mainAxisSpacing: 0.0,
                 crossAxisSpacing: 0.0,
                 crossAxisCount: 3,
-                children: List.generate(choices.length, (index) {
-                  return Center(
-                    child: ChoiceCard(choice: choices[index]),
-                  );
-                }))));
+                children: List.generate(
+                  choices.length,
+                  (index) {
+                    return Center(
+                      child: ChoiceCard(choice: choices[index]),
+                    );
+                  },
+                ))));
   }
 }
 
@@ -70,25 +80,49 @@ class ChoiceCard extends StatelessWidget {
       _dimension = MediaQuery.of(context).size.width - 10.0;
     }
     return Card(
-        color: Colors.white,
+        elevation: 0,
+        color: PrimaryColor,
+        shape: RoundedRectangleBorder(
+          side: BorderSide(color: PrimaryColor, width: 0),
+          borderRadius: BorderRadius.circular(0),
+        ),
         child: Center(
           child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
+                // new Container(color: Colors.red, child: new Center(child: new Text("data"))),
                 Transform.translate(
-                  offset: Offset(0, -5.0),
+                  offset: Offset(0, 10.0),
                   child: Container(
-                    width: 95,
+                    width: 120,
                     height: 95,
                     child: SvgPicture.asset(choice.icon),
                   ),
                 ),
                 Transform.translate(
-                  offset: Offset(0, -5.0),
+                  offset: Offset(0, 7),
                   child: Container(
-                    child: Text(choice.title, style: null),
-                  ),
+                      width: 120,
+                      height: 35,
+                      color: PrimaryColor,
+                      child: TextField(
+                          textAlignVertical: TextAlignVertical.center,
+                          textAlign: TextAlign.center,
+                          decoration: new InputDecoration(
+                            border: OutlineInputBorder(
+                              // borderRadius: BorderRadius.circular(30),
+                              borderSide: BorderSide(
+                                width: 0,
+                                style: BorderStyle.none,
+                              ),
+                            ),
+                            filled: true,
+                            contentPadding: const EdgeInsets.all(7.0),
+                            hintStyle: new TextStyle(color: Colors.white),
+                            hintText: choice.title,
+                            fillColor: TertiaryColor,
+                          ))),
                 ),
               ]),
         ));

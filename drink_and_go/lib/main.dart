@@ -6,7 +6,7 @@ import 'drink.dart';
 // Main App Page setup
 // home: first page of application.
 void main() {
-  runApp(MaterialApp(title: 'Drink and Go', color: Colors.black, home: Test()));
+  runApp(MaterialApp(title: 'Drink and Go', color: Colors.black, home: Home()));
 }
 
 final Widget fruitSalad = SvgPicture.asset(
@@ -294,19 +294,19 @@ class Home extends StatelessWidget {
 //   }
 // }
 
-class Drink extends StatelessWidget {
-  @override
-  final List<Widget> _painters = <Widget>[];
-  Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: PrimaryColor,
-        appBar: AppBar(
-          title: Text("Please Select a Drink"),
-          backgroundColor: SecondaryColor,
-        ),
-        body: Center(child: Text('hello')));
-  }
-}
+// class Drink extends StatelessWidget {
+//   @override
+//   final List<Widget> _painters = <Widget>[];
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//         backgroundColor: PrimaryColor,
+//         appBar: AppBar(
+//           title: Text("Please Select a Drink"),
+//           backgroundColor: SecondaryColor,
+//         ),
+//         body: Center(child: Text('hello')));
+//   }
+// }
 
 class Go extends StatelessWidget {
   @override
