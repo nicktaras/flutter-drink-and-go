@@ -1,27 +1,18 @@
 # flutter_drink_and_go
 flutter_drink_and_go
 
+A project to assist people who need to track their intake of fluids and loo breaks.
 
-// floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-// floatingActionButton: FloatingActionButton(
-//   child: const Icon(Icons.add),
-//   onPressed: () {},
-// ),
-// bottomNavigationBar: BottomAppBar(
-//   shape: CircularNotchedRectangle(),
-//   notchMargin: 4.0,
-//   child: new Row(
-//     mainAxisSize: MainAxisSize.max,
-//     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//     children: <Widget>[
-//       IconButton(
-//         icon: Icon(Icons.menu),
-//         onPressed: () {},
-//       ),
-//       IconButton(
-//         icon: Icon(Icons.search),
-//         onPressed: () {},
-//       ),
-//     ],
-//   ),
-// ),
+The MVP will include:
+
+- Drinks lisk
+- Add / remove drink selection
+- Add / remove loo breaks
+- Summary
+
+Additional features:
+
+- Change timings
+- Apply additional features to enable people to capture the most accurate information
+- Add new drink types
+- Add drink sizes, small, medium, large.
