@@ -16,3 +16,7 @@ Additional features:
 - Apply additional features to enable people to capture the most accurate information
 - Add new drink types
 - Add drink sizes, small, medium, large.
+
+## Run
+
+flutter run
