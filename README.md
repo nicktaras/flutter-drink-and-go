@@ -3,7 +3,7 @@
 # flutter_drink_and_go
 flutter_drink_and_go
 
-A project to assist people who need to track their intake of fluids and loo breaks.
+A project to assist people who need to track their intake of fluids and loo breaks. Inspired by a friend needing to do this for health reasons.
 
 # status
 
